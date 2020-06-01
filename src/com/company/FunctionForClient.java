@@ -8,7 +8,6 @@ public class FunctionForClient {
     public static int Perevod(int id) {
         int per = 0;
 
-
             Random r = new Random();
            int pe = r.nextInt(100);
             if (pe < 60) {
@@ -16,7 +15,6 @@ public class FunctionForClient {
                 int maxR = 20;
                 Random ran = new Random();
                 per = minR + ran.nextInt(maxR - minR);
-
 
             }
             else if (pe >= 60) {
@@ -49,9 +47,9 @@ public class FunctionForClient {
     }
 
     public static int ZP(int id) {
-            int zp = 0;
-
-            Random r = new Random();
+        int zp;
+        for(int i = 1; 1==1; i++) {
+            Random r = new Random(id);
             int ra = r.nextInt(100);
 
             if ( ra < 70){
@@ -59,24 +57,24 @@ public class FunctionForClient {
                 int maxR = 300;
                 Random ran = new Random(id);
                 zp = minR + ran.nextInt(maxR - minR);
-
+                break;
             }
-            else if ( ra >= 70 && ra < 90){
+            if ( ra >= 70 && ra < 90){
                 int minR = 300;
                 int maxR = 500;
                 Random ran = new Random(id);
                 zp = minR + ran.nextInt(maxR - minR);
-
+                break;
             }
-            else  if (ra >= 90){
+            if (ra >= 90){
                 int minR = 500;
                 int maxR = 601;
                 Random ran = new Random(id);
                 zp = minR + ran.nextInt(maxR - minR);
-
-
+                break;
+            }
         }
-            return zp;
+        return zp;
         }
 
     public static String Name(int id){
