@@ -36,10 +36,10 @@ public class Main {
             if(z > 499){
                 zp600++;
             }
-            if (p < 30) {
+            if (p < 20) {
                 perevod20++;
             }
-            if (p > 29) {
+            if (p > 19) {
                 perevod50++;
             }
         }

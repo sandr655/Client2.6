@@ -7,25 +7,26 @@ public class FunctionForClient {
 
     public static int Perevod(int id) {
         int per;
-        int pe;
+
         for (int i = 1; 1 == 1; i++) {
             Random r = new Random();
-            if (r.nextInt(100) < 60) {
-                int a = 10;
-                int b = 10;
-                per = (int) (a + (Math.random() * b));
-                pe = per;
+           int pe = r.nextInt(100);
+            if (pe < 60) {
+                int minR = 1;
+                int maxR = 20;
+                Random ran = new Random();
+                per = minR + ran.nextInt(maxR - minR);
                 break;
 
-            } else {
-                int a2 = 20;
-                int b2 = 30;
-                per = (int) (a2 + (Math.random() * b2));
-                pe = per;
+            } if (pe >= 60) {
+                int minR = 20;
+                int maxR = 51;
+                Random ran = new Random();
+             per = minR + ran.nextInt(maxR - minR);
                 break;
             }
         }
-        return pe;
+        return per;
 
     }
 
