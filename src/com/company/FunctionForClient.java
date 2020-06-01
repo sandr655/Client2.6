@@ -18,7 +18,8 @@ public class FunctionForClient {
                 per = minR + ran.nextInt(maxR - minR);
                 break;
 
-            } if (pe >= 60) {
+            }
+            else if (pe >= 60) {
                 int minR = 20;
                 int maxR = 51;
                 Random ran = new Random();
@@ -60,14 +61,14 @@ public class FunctionForClient {
                 zp = minR + ran.nextInt(maxR - minR);
                 break;
             }
-            if ( ra >= 70 && ra < 90){
+            else if ( ra >= 70 && ra < 90){
                 int minR = 300;
                 int maxR = 500;
                 Random ran = new Random(id);
                 zp = minR + ran.nextInt(maxR - minR);
                 break;
             }
-            if (ra >= 90){
+            else  if (ra >= 90){
                 int minR = 500;
                 int maxR = 601;
                 Random ran = new Random(id);
@@ -84,16 +85,16 @@ public class FunctionForClient {
             id = id/1000;
         }
         int c = 0;
-        if(id<5) {
+        if (id<5) {
             c = id + 5;
         }
-        if (id >= 5 && id<=10) {
+        else if (id >= 5 && id<=10) {
             c = id;
         }
-        if (id <500 && id>10) {
+        else if (id <500 && id>10) {
             c = id/100+5;
         }
-        if (id >=500 && id<=1000) {
+        else if (id >=500 && id<=1000) {
             c = id/100;
         }
 
