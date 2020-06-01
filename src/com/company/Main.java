@@ -39,7 +39,7 @@ public class Main {
             if (p < 30) {
                 perevod20++;
             }
-            if (p < 29) {
+            if (p > 29) {
                 perevod50++;
             }
         }

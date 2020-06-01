@@ -48,10 +48,32 @@ public class FunctionForClient {
 
     public static int ZP(int id) {
             int zp;
-        int minR = 100;
-        int maxR = 601;
-                Random r = new Random(id);
-        zp = minR + r.nextInt(maxR - minR);
+        for(int i = 1; 1==1; i++) {
+            Random r = new Random();
+            int ra = r.nextInt(100);
+
+            if ( ra < 70){
+                int minR = 100;
+                int maxR = 300;
+                Random ran = new Random(id);
+                zp = minR + ran.nextInt(maxR - minR);
+                break;
+            }
+            if ( ra >= 70 && ra < 90){
+                int minR = 300;
+                int maxR = 500;
+                Random ran = new Random(id);
+                zp = minR + ran.nextInt(maxR - minR);
+                break;
+            }
+            if (ra >= 90){
+                int minR = 500;
+                int maxR = 601;
+                Random ran = new Random(id);
+                zp = minR + ran.nextInt(maxR - minR);
+                break;
+            }
+        }
             return zp;
         }
 
