@@ -6,9 +6,9 @@ import java.util.Random;
 public class FunctionForClient {
 
     public static int Perevod(int id) {
-        int per;
+        int per = 0;
 
-        for (int i = 1; 1 == 1; i++) {
+
             Random r = new Random();
            int pe = r.nextInt(100);
             if (pe < 60) {
@@ -16,7 +16,7 @@ public class FunctionForClient {
                 int maxR = 20;
                 Random ran = new Random();
                 per = minR + ran.nextInt(maxR - minR);
-                break;
+
 
             }
             else if (pe >= 60) {
@@ -24,9 +24,9 @@ public class FunctionForClient {
                 int maxR = 51;
                 Random ran = new Random();
              per = minR + ran.nextInt(maxR - minR);
-                break;
+
             }
-        }
+
         return per;
 
     }
@@ -49,8 +49,8 @@ public class FunctionForClient {
     }
 
     public static int ZP(int id) {
-            int zp;
-        for(int i = 1; 1==1; i++) {
+            int zp = 0;
+
             Random r = new Random();
             int ra = r.nextInt(100);
 
@@ -59,22 +59,22 @@ public class FunctionForClient {
                 int maxR = 300;
                 Random ran = new Random(id);
                 zp = minR + ran.nextInt(maxR - minR);
-                break;
+
             }
             else if ( ra >= 70 && ra < 90){
                 int minR = 300;
                 int maxR = 500;
                 Random ran = new Random(id);
                 zp = minR + ran.nextInt(maxR - minR);
-                break;
+
             }
             else  if (ra >= 90){
                 int minR = 500;
                 int maxR = 601;
                 Random ran = new Random(id);
                 zp = minR + ran.nextInt(maxR - minR);
-                break;
-            }
+
+
         }
             return zp;
         }
