@@ -5,11 +5,11 @@ import java.util.Random;
 
 public class Client {
 
-    int id;
-    String name;
-    static int zp;
-    String date;
-    int per;
+  private int id;
+  private String name;
+  private int zp;
+  private String date;
+  private int per;
 
 
     public Client(int id){

@@ -18,7 +18,7 @@ class RanS {
             if (im < 30){
                 imi = im+i;
             }
-            else if (im >= 30){
+            else {
                 imi = im-i;
             }
 

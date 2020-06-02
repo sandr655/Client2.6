@@ -13,7 +13,7 @@ public class Main {
 
         Client k1 = new Client(123);
         System.out.println("id "+ k1.getId()+" Name "+k1.getName()+" Date "+ k1.getDate()+" zp "+ k1.getZp()+" perevod "+ k1.getPer());
-        Client k2 = new Client(123);
+        Client k2 = new Client(125);
         System.out.println("id "+ k2.getId()+" Name "+k2.getName()+" Date "+ k2.getDate()+" zp "+ k2.getZp()+" perevod "+ k2.getPer());
         Client k3 = new Client(124);
         System.out.println("id "+ k3.getId()+" Name "+k3.getName()+" Date "+ k3.getDate()+" zp "+ k3.getZp()+" perevod "+ k3.getPer());
@@ -21,6 +21,7 @@ public class Main {
         System.out.println("id "+ k4.getId()+" Name "+k4.getName()+" Date "+ k4.getDate()+" zp "+ k4.getZp()+" perevod "+ k4.getPer());
         Client k5 = new Client(9999);
         System.out.println("id "+ k5.getId()+" Name "+k5.getName()+" Date "+ k5.getDate()+" zp "+ k5.getZp()+" perevod "+ k5.getPer());
+        System.out.println("id "+ k1.getId()+" Name "+k1.getName()+" Date "+ k1.getDate()+" zp "+ k1.getZp()+" perevod "+ k1.getPer());
 
         for(int id = 1000; id <= 99000; id++){
             Client k6 = new Client(id);
@@ -30,16 +31,17 @@ public class Main {
             if (z < 300){
                 zp300++;
             }
-            else  if(z > 299 && z < 500){
-                zp500++;
-            }
-           else if(z > 499){
+            else if(z > 499){
                 zp600++;
             }
+            else {
+                zp500++;
+            }
+
             if (p < 20) {
                 perevod20++;
             }
-            else if (p > 19) {
+            else {
                 perevod50++;
             }
         }

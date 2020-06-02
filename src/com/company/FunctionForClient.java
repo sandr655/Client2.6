@@ -14,17 +14,14 @@ public class FunctionForClient {
                 int maxR = 20;
                 Random ran = new Random();
                 per = minR + ran.nextInt(maxR - minR);
-
             }
-            else if (pe >= 60) {
+            else {
                 int minR = 20;
                 int maxR = 51;
                 Random ran = new Random();
              per = minR + ran.nextInt(maxR - minR);
-
             }
         return per;
-
     }
 
     public static String Date(int id){
@@ -55,18 +52,18 @@ public class FunctionForClient {
                 Random ran = new Random(id);
                 zp = minR + ran.nextInt(maxR - minR);
             }
-            if ( ra >= 70 && ra < 90){
+           else if (ra >= 90){
+                int minR = 500;
+                int maxR = 601;
+                Random ran = new Random(id);
+                zp = minR + ran.nextInt(maxR - minR);
+           }
+           else {
                 int minR = 300;
                 int maxR = 500;
                 Random ran = new Random(id);
                 zp = minR + ran.nextInt(maxR - minR);
             }
-            if (ra >= 90){
-                int minR = 500;
-                int maxR = 601;
-                Random ran = new Random(id);
-                zp = minR + ran.nextInt(maxR - minR);
-        }
         return zp;
         }
 
