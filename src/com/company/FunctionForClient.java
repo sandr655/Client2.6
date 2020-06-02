@@ -52,7 +52,7 @@ public class FunctionForClient {
                 Random ran = new Random(id);
                 zp = minR + ran.nextInt(maxR - minR);
             }
-            else if ( ra >= 70 && ra < 90) {
+            else if (ra < 90) {
                 int minR = 300;
                 int maxR = 500;
                 Random ran = new Random(id);
