@@ -7,7 +7,6 @@ public class FunctionForClient {
 
     public static int Perevod(int id) {
         int per = 0;
-
             Random r = new Random();
            int pe = r.nextInt(100);
             if (pe < 60) {
@@ -24,7 +23,6 @@ public class FunctionForClient {
              per = minR + ran.nextInt(maxR - minR);
 
             }
-
         return per;
 
     }
@@ -47,8 +45,7 @@ public class FunctionForClient {
     }
 
     public static int ZP(int id) {
-        int zp;
-        for(int i = 1; 1==1; i++) {
+        int zp = 0;
             Random r = new Random(id);
             int ra = r.nextInt(100);
 
@@ -57,44 +54,29 @@ public class FunctionForClient {
                 int maxR = 300;
                 Random ran = new Random(id);
                 zp = minR + ran.nextInt(maxR - minR);
-                break;
             }
             if ( ra >= 70 && ra < 90){
                 int minR = 300;
                 int maxR = 500;
                 Random ran = new Random(id);
                 zp = minR + ran.nextInt(maxR - minR);
-                break;
             }
             if (ra >= 90){
                 int minR = 500;
                 int maxR = 601;
                 Random ran = new Random(id);
                 zp = minR + ran.nextInt(maxR - minR);
-                break;
-            }
         }
         return zp;
         }
 
     public static String Name(int id){
         String name;
-        if(id >1000){
-            id = id/1000;
-        }
-        int c = 0;
-        if (id<5) {
-            c = id + 5;
-        }
-        else if (id >= 5 && id<=10) {
-            c = id;
-        }
-        else if (id <500 && id>10) {
-            c = id/100+5;
-        }
-        else if (id >=500 && id<=1000) {
-            c = id/100;
-        }
+        int c;
+        int minR = 5;
+        int maxR = 11;
+        Random ran = new Random(id);
+        c = minR + ran.nextInt(maxR - minR);
 
         RanS name2 = new RanS();
         name = RanS.RS(c,id);

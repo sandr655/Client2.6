@@ -8,14 +8,13 @@ class RanS {
         String[] lis = new String[]{"й","ц","у","к","е","н","г","ш","щ","з","х","ф","ы","в","а","п","р","о","л","д","ж","э","я","ч","с","м","и","т","б","ю","й","а","в","о","л","н","е","к","у","м"};
         // Создал StringBuffer для сохранения результата
         StringBuffer r = new StringBuffer(n);
-
         Random ra = new Random(id);
         int minR = 1;
         int maxR = 40;
         int im = minR + ra.nextInt(maxR - minR);
 
         for (int i = 0; i < n; i++) {
-            int imi=0;
+            int imi = 0;
             if (im < 30){
                 imi = im+i;
             }
